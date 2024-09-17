@@ -7,7 +7,7 @@ import("../pizzaData.js");
 
 const PizzaMenu = () => {
   return (
-    <div className="">
+    <div className="h-full">
       <DevCard />
 
       <div className="container flex flex-col justify-center items-center">

@@ -9,9 +9,14 @@ const Footer = () => {
 
   return (
     <div>
-      <h1 className="text-white font-semibold text-2xl">
-        {new Date().toLocaleTimeString()}. We are currently Close
-      </h1>
+      {!isOpen && (
+        <div className="order flex items-center gap-6">
+          <p className="text-2xl font-bold text-white ">We are Open</p>
+          <button className="py-2 px-10 font-semibold text-xl bg-amber-400 rounded-lg hover:bg-amber-200">
+            Order
+          </button>
+        </div>
+      )}
     </div>
   );
 };
