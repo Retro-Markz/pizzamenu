@@ -7,17 +7,27 @@ import("../pizzaData.js");
 
 const PizzaMenu = () => {
   return (
-    <div className="h-full">
+    <>
       <DevCard />
+      <div
+        className="flex flex-col justify-center items-center 
+      md:clex md:flex-col md:justify-center md:items-center
+      "
+      >
+        <div
+          className="container flex flex-col justify-center items-center 
+      md:clex md:flex-col md:justify-center md:items-center
+      
+    "
+        >
+          <Title />
 
-      <div className="container flex flex-col justify-center items-center">
-        <Title />
+          <Menu />
 
-        <Menu />
-
-        <Footer />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

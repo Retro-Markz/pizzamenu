@@ -7,7 +7,7 @@ const PizzaInfo = ({ pizzaObj }) => {
         src={pizzaObj.photoName}
         alt="pizza_image"
       />
-      <h1 className="font-semibold text-2xl font-serif text-center">
+      <h1 className="font-semibold text-2xl font-serif text-center ">
         {pizzaObj.name}
       </h1>
       <p className="w-56 text-center">{pizzaObj.ingredients}</p>

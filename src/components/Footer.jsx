@@ -8,7 +8,7 @@ const Footer = () => {
   //else alert("we are curretly closed!");
 
   return (
-    <div>
+    <div className="">
       {!isOpen && (
         <div className="order flex items-center gap-6">
           <p className="text-2xl font-bold text-white ">We are Open</p>
