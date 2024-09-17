@@ -1,10 +1,11 @@
 import PizzaInfo from "./PizzaInfo";
 import pizzaData from "../pizzaData";
+import "../styles/menu.css";
 
 const Menu = () => {
   return (
     <ul
-      className="h-full w-[60vw]  flex items-center flex-wrap justify-center gap-8
+      className="list-menu 
     "
     >
       {pizzaData.map((pizza) => (

@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
+import "../styles/pizzaInfo.css";
+
 const PizzaInfo = ({ pizzaObj }) => {
   return (
-    <li className=" w-56 flex flex-col justify-center items-center p-2  m-2 bg-blue-50 hover:shadow-slate-200 hover:shadow-xl transition-all bg-opacity-30 rounded-2xl shadow-xl">
+    <li className="list-style ">
       <img
         className="w-32 rounded-full shadow-md"
         src={pizzaObj.photoName}

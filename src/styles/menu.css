@@ -1,0 +1,11 @@
+.list-menu {
+  height: max-content;
+  width: 60vw;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px;
+}
