@@ -1,11 +1,11 @@
-const PizzaInfo = () => {
+const PizzaInfo = ({ name, photoName, ingredients, price }) => {
   return (
-    <div className="flex flex-col justify-center items-center p-14 bg-blue-50 bg-opacity-10 rounded-2xl m-8">
-      <img className="w-16 rounded-lg " src=" " alt="pizza_image" />
-      <h1 className="font-semibold text-xl font-serif">pizza name</h1>
-      <p className="">ingredients</p>
-      <h2 className="mt-2 font-semibold">
-        price <span className="text-amber-400">$6</span>
+    <div className="w-64 flex flex-col justify-center items-center p-4 bg-slate-50 bg-opacity-30 rounded-2xl m-4 gap-1 shadow-md">
+      <img className="w-48 rounded-lg " src={photoName} alt="pizza_image" />
+      <h1 className="font-semibold text-2xl font-serif text-center">{name}</h1>
+      <p className="text-center">{ingredients}</p>
+      <h2 className="mt-2 font-semibold text-xl ">
+        price <span className="text-yellow-300 ">$ {price}</span>
       </h2>
     </div>
   );
