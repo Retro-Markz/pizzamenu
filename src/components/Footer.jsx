@@ -8,7 +8,7 @@ const Footer = () => {
   //else alert("we are curretly closed!");
 
   return (
-    <div className="mt-24">
+    <div>
       <h1 className="text-white font-semibold text-2xl">
         {new Date().toLocaleTimeString()}. We are currently Close
       </h1>

@@ -1,13 +1,20 @@
-const PizzaInfo = ({ name, photoName, ingredients, price }) => {
+/* eslint-disable react/prop-types */
+const PizzaInfo = ({ pizzaObj }) => {
   return (
-    <div className="w-64 flex flex-col justify-center items-center p-4 bg-slate-50 bg-opacity-30 rounded-2xl m-4 gap-1 shadow-md">
-      <img className="w-48 rounded-lg " src={photoName} alt="pizza_image" />
-      <h1 className="font-semibold text-2xl font-serif text-center">{name}</h1>
-      <p className="text-center">{ingredients}</p>
+    <li className=" w-56 flex flex-col justify-center items-center p-2  m-2 bg-blue-50 hover:shadow-slate-200 hover:shadow-xl transition-all bg-opacity-30 rounded-2xl shadow-xl">
+      <img
+        className="w-32 rounded-full shadow-md"
+        src={pizzaObj.photoName}
+        alt="pizza_image"
+      />
+      <h1 className="font-semibold text-2xl font-serif text-center">
+        {pizzaObj.name}
+      </h1>
+      <p className="w-56 text-center">{pizzaObj.ingredients}</p>
       <h2 className="mt-2 font-semibold text-xl ">
-        price <span className="text-yellow-300 ">$ {price}</span>
+        price $<span className="text-red-800">{pizzaObj.price}</span>
       </h2>
-    </div>
+    </li>
   );
 };
 
