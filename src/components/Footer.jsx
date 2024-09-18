@@ -4,18 +4,22 @@ const Footer = () => {
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
 
-  //if (hour >= openHour && hour <= closeHour) alert("We are currently open!");
-  //else alert("we are curretly closed!");
-
   return (
     <div className="">
-      {!isOpen && (
+      {isOpen ? (
         <div className="order flex items-center gap-6">
-          <p className="text-2xl font-bold text-white ">We are Open</p>
+          <p className="text-2xl font-bold text-white ">
+            We are open til {closeHour}:00. visit us online
+          </p>
           <button className="py-2 px-10 font-semibold text-xl bg-amber-400 rounded-lg hover:bg-amber-200">
             Order
           </button>
         </div>
+      ) : (
+        <p className="text-2xl font-bold text-white ">
+          Sorry we are closed, we meet yo between {openHour}:00 and {closeHour}
+          :00
+        </p>
       )}
     </div>
   );

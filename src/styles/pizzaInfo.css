@@ -16,4 +16,5 @@
 
 .list-style:hover {
   box-shadow: rgba(255, 207, 207, 0.24) 2px 3px 8px;
+  background: rgba(184, 215, 255, 0.4);
 }
