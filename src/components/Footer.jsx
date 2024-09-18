@@ -16,7 +16,7 @@ const Footer = () => {
           </button>
         </div>
       ) : (
-        <p className="text-2xl font-bold text-white ">
+        <p className="text-2xl font-bold text-white text-center mb-8">
           Sorry we are closed, we meet yo between {openHour}:00 and {closeHour}
           :00
         </p>
